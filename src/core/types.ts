@@ -49,6 +49,7 @@ export interface Toast {
   };
   customToast?: (toast: Toast) => JSX.Element;
   providerKey: string;
+  onToastPress?: (params: any) => any;
 }
 
 export type ToastOptions = Partial<
@@ -64,6 +65,7 @@ export type ToastOptions = Partial<
     | 'customToast'
     | 'disableShadow'
     | 'providerKey'
+    | 'onToastPress'
   >
 >;
 
